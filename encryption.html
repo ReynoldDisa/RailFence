@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail Fence Cipher - Encryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Rail Fence Cipher</h1>
+        <nav>
+            <a href="index.html">Interactive Tool</a> |
+            <a href="introduction.html">Introduction</a> |
+            <a href="encryption.html">Encryption Technique</a> |
+            <a href="decryption.html">Decryption Technique</a>
+        </nav>
+    </header>
+
+    <!-- Encryption Technique Section -->
+    <section>
+        <h2>Encryption Technique</h2>
+        <p>In a transposition cipher, the order of the alphabets is re-arranged to obtain the cipher-text.</p>
+        <ol>
+            <li>In the rail fence cipher, the plain-text is written downwards and diagonally on successive rails of an imaginary fence.</li>
+            <li>When we reach the bottom rail, we traverse upwards moving diagonally; after reaching the top rail, the direction is changed again. Thus the alphabets of the message are written in a zig-zag manner.</li>
+            <li>After each alphabet has been written, the individual rows are combined to obtain the cipher-text.</li>
+        </ol>
+        <p>For example, if the message is <strong>"GeeksforGeeks"</strong> and the number of rails = 3, then the cipher is prepared as:</p>
+
+        <!-- Image -->
+        <div class="image-container">
+            <img src="encryption.png" alt="Rail Fence Cipher Encryption Example">
+        </div>
+    </section>
+    <footer style="text-align:center; margin-top:50px; font-family: Arial, sans-serif; background-color:#FFCB61; padding:20px; border-radius:10px;">
+    <p><strong>Created by Student of <b>K.E.S. Shroff College</b></strong></p>
+    <p>Reynold D'sa</p>
+    <p>TYBCA</p>
+    <p>Roll No: TDCA014A</p>
+</footer>
+</body>
+</html>

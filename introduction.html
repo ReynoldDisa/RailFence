@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail Fence Cipher - Introduction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rail Fence Cipher</h1>
+        <nav>
+            <a href="index.html">Interactive Tool</a> |
+            <a href="introduction.html">Introduction</a> |
+            <a href="encryption.html">Encryption Technique</a> |
+            <a href="decryption.html">Decryption Technique</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>The rail fence cipher, also known as the zigzag cipher, is a simple transposition cipher that rearranges the letters of a message to create a seemingly unrelated ciphertext.
+ It derives its name from the zigzag pattern in which the plaintext is written across multiple "rails" or rows, resembling the rails of a fence.
+ The encryption process involves writing the message diagonally down and up across the rails, starting from the top rail and moving down to the bottom, then back up to the top, continuing until the entire message is written.
+ The ciphertext is then formed by reading the characters off row by row from the top to the bottom.</p>
+
+<p>The key for the rail fence cipher is the number of rails used in the zigzag pattern.
+ For example, with a key of 3, the plaintext "defend the east wall" is written in a zigzag pattern across three rows, and the ciphertext is read off horizontally.
+ This method is considered weak on its own because it offers essentially no communication security and can be easily broken by hand through brute force or by analyzing the frequency distribution of characters, which remains identical to that of natural language.
+ Despite its weakness, it can be combined with other ciphers, such as a substitution cipher, to create a more secure encryption method.</p>
+    </section>
+   
+<footer style="text-align:center; margin-top:50px; font-family: Arial, sans-serif; background-color:#FFCB61; padding:20px; border-radius:10px;">
+    <p><strong>Created by Student of <b>K.E.S. Shroff College</b></strong></p>
+    <p>Reynold D'sa</p>
+    <p>TYBCA</p>
+    <p>Roll No: TDCA014A</p>
+</footer>
+
+</body>
+</html>

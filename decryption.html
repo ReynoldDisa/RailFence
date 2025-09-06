@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail Fence Cipher - Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Rail Fence Cipher</h1>
+        <nav>
+            <a href="index.html">Interactive Tool</a> |
+            <a href="introduction.html">Introduction</a> |
+            <a href="encryption.html">Encryption Technique</a> |
+            <a href="decryption.html">Decryption Technique</a>
+        </nav>
+    </header>
+
+    <!-- Decryption Technique Section -->
+    <section>
+        <h2>Decryption Technique</h2>
+        <p>As we've seen earlier, the number of columns in rail fence cipher remains equal to the length of the plain-text message, and the key corresponds to the number of rails.</p>
+
+        <p>Hence, the rail matrix can be constructed accordingly. Once we've got the matrix, we can figure out the spots where texts should be placed (using the same method of moving diagonally up and down alternatively).</p>
+
+        <p>Then, we fill the cipher-text row-wise. After filling it, we traverse the matrix in a zig-zag manner to obtain the original text.</p>
+
+        <h3>Implementation Example:</h3>
+        <p>Let cipher-text = <strong>"GsGsekfrek eoe"</strong>, and Key = 3</p>
+        <p>Number of columns in matrix = length of cipher-text = 13</p>
+        <p>Number of rows = key = 3</p>
+        <p>Hence, original matrix will be of size 3 × 13. Now, marking the places with text as '*' we get:</p>
+
+        <!-- Image -->
+        <div class="image-container">
+            <img src="decryption.png" alt="Rail Fence Cipher Decryption Example">
+        </div>
+    </section>
+    <footer style="text-align:center; margin-top:50px; font-family: Arial, sans-serif; background-color:#FFCB61; padding:20px; border-radius:10px;">
+    <p><strong>Created by Student of <b>K.E.S. Shroff College</b></strong></p>
+    <p>Reynold D'sa</p>
+    <p>TYBCA</p>
+    <p>Roll No: TDCA014A</p>
+</footer>
+</body>
+</html>
